@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos</title>
+    <link rel="stylesheet" href="curriculo3.css">
+</head>
+<body>
+    <div class="wrapper">
+    <header>
+       <div class="menu">
+        <h4>Binario</h4>
+      <h4>jekyll migration</h4>
+      <h4>About Hugo</h4>
+      <h4>getting Started with Hugo</h4>
+       </div>
+    </header>
+
+    <div class="container">
+        <div class="coluna">
+           <a href="https://raycapmbmgc.github.io/formulario"><h3>FORMULARIO</h3></a><br>
+            <p>criar um formulario com html simples <br>
+                e usando alguns elementos do css
+            </p>
+        </div>
+        <div class="coluna">
+            <a href="https://raycapmbmgc.github.io/porjetoB/"><h3>MUSICA</h3></a>
+            <p>Fazendo uma página com uma imagem <br>
+         um título de uma música e a <br>
+           letra dessa música</p>
+        </div>
+        <div class="coluna">
+            <a href="https://raycapmbmgc.github.io/projetoC/"><h3>TABELA</h3></a>
+            <p>criando uma página para exibir uma tabela com 4 colunas. <br>
+                 Linguagem/Framework - Descrição - <br>
+                  Tempo de Experiência - Nível.
+            </p>
+        </div>
+        <div class="coluna">
+            <a href="https://raycapmbmgc.github.io/projetoD/"><h3>TABELA 2</h3></a>
+            <P>Usando Tabelas e Iframe HTML, crie uma tabela com 2 linhas e 2 colunas, <br>
+                 onde em cada célula da tabela deve conter uma página de notícias que você <br>
+                 costuma ler A tabela com as <br>
+                 páginas deve ter o tamano próximo a 800x600.
+
+            </P>
+        </div>
+        <div class="coluna">
+            <a href="https://posicionamentos.raycarafaelle.repl.co/"><h3>POSICIONAMENTOS</h3></a>
+            <p>criando posicionamentos com css</p>
+        </div>
+        <div class="coluna">
+            <a href="https://cadrasto-aluno.raycarafaelle.repl.co/"><h3>CADRASTRO ALUNOS</h3></a>
+            <P>Criar um site de cadrastro para os aluno <br>
+            usando três linhas e duas colunas e comandos do css</P>
+        </div>
+        <div class="coluna">
+            <a href="https://raycapmbmgc.github.io/homenagem/"><h3>HOMENAGEM</h3></a>
+            <P> Escreva uma homenagem a alguém que você admira e <br>
+                publique como uma página da web. <br>
+                 Este projeto envolverá trabalhar com a adição de imagens, <br>
+                  links, listas e parágrafos. </P>
+        </div>
+        <div class="coluna">
+            <a href="/google/google.html"><h3>GOOGLE</h3></a>
+            <p> fazer uma página parecida com a do google.com. Neste projeto, <br>
+                 crie uma página igual a do Google, estilo, <br>
+                 botões, rodapé, etc. Contudo, use um logotipo da sua escolha. <br>
+                 Obviamente, a página não terá a função de busca.</p>
+        </div>
+        <div class="coluna">
+            <a href="https://raycapmbmgc.github.io/forms2/"><h3>FORMULARIO</h3></a>
+            <P> Este projeto testará principalmente suas habilidades <br>
+                em todos os tipos de entradas. Isso testará seu conhecimento em formulários <br>
+                 e na estruturação de sua página da web. O formulário não precisa <br>
+                 enviar nenhuma funcionalidade. <br>
+                Contudo, você deve usar seus melhores conhecimentos de CSS e HTML</P>
+        </div>
+        <div class="coluna">
+            <a href="https://raycapmbmgc.github.io/"><h3>CURRICULO</h3></a>
+            <p>Atualize a sua página inicial e o seu currículo. <br>
+                a. A sua página inicial será similar a página abaixo. <br>
+                 Escolha as cores, o tipo de fonte e coloque uma foto sua no centro da página. <br>
+                  Coloque links para as suas redes sociais. Coloque o seu nome no <br>
+                   canto superior esquerdo. No canto superior direito coloque as seguintes sessões: <br>
+                 Sobre e  Projetos. Ao clicar em Sobre o link deverá levar para sua nova página de currículo</p>
+        </div>
+        <div class="coluna">12</div>
+        <div class="coluna">13</div>
+        <div class="coluna">14</div>
+        
+    </div>
+</div>
+<style>
+body{
+    background: linear-gradient(to right,rgb(180, 53, 75),purple);
+}
+
+.container{
+    display: grid;
+    width: 80vw;
+    height: 80vh;
+    grid-template-columns:repeat(2, 1fr) ;
+    grid-template-rows: repeat(4,1fr);
+    gap: 10px;
+    margin: auto;
+ justify-items: center;
+ text-align: center;
+ align-items: center;
+
+}
+div{
+    border-radius: 5px;
+}
+ .coluna{
+    background-color: rgb(180, 130, 226);
+ height: 200px;
+ width: 550px;
+
+ }
+
+ .menu{
+    grid-area: header;
+    background-color: rgb(181, 113, 245);
+    border-radius: 5px;
+    height: 48px;
+    display: flex;
+    margin-left: 50px;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: 10px;
+    text-transform: uppercase;
+    font-size: 10;
+    color: rgb(223, 190, 4);
+    padding: 12px 16px;
+ }
+
+ .wrapper{
+    display: grid;
+    grid-gap:20px;
+    grid-template-columns: 1fr ;
+    grid-template-areas: 
+    'header' 'hearder';
+
+ }
+
+ 
+</style>
+</body>
+</html>
