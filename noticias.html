@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cores.css">
+    <title>Notícias</title>
+</head>
+<body>
+    <div class="noticias">
+        <div class="tabela" id="tabela1">
+            <h2>Flamengo aumenta invencibilidade histórica contra o Botafogo no Brasileirão </h2>
+            <p>O Flamengo venceu o Botafogo no último sábado (02) por 2 a 1 no Estádio Nilton Santos, pelo Campeonato Brasileiro.</p>
+        </div>
+        <div class="tabela" id="tabela2">
+            <h2>No palco da estreia, Bruno Henrique revive fama de "Rei dos Clássicos" e sua melhor versão no Flamengo</h2>
+            <p>Depois da grave lesão no joelho direito e de precisar reconstruir o ligamento cruzado anterior, o atacante ficou cerca de 10 meses fora de combate. </p>
+        </div>
+        <div class="tabela" id="tabela3">
+            <h2>loud é campeã da LBFF</h2>
+            <p> campeonato oficial de Free Fire no Brasil. Esta é a segunda vez que a onda verde leva o prêmio para casa, sendo a primeira em 2022, durante a LBFF 7.</p>
+        </div>
+        <div class="tabela" id="tabela4">
+            <h2>VALORANT | Campeã mundial, LOUD foi a segunda equipe que mais faturou em 2022</h2>
+            <p>Colocando o cenário brasileiro no topo do mundo, a LOUD chegou ao VALORANT em 2022 e já é uma das organizações que mais lucrou da modalidade. Participando de todos os torneios internacionais neste ano</p>
+        </div>
+        <div class="tabela" id="tabela5">
+            <h2>Antetokounmpo fica fora da Copa do Mundo de basquete</h2>
+            <p>O astro grego Giannis Antetokounmpo não vai competir na Copa do Mundo de basquete de 2023. O jogador do Milwaukee Bucks passou por uma cirurgia no joelho esquerdo.</p>
+        </div>
+        <div class="tabela" id="tabela6">
+            <h2>Anthony Edwards é multado em R$ 245 mil por jogar cadeira em torcedores</h2>
+            <p>Incidente aconteceu após a derrota do Minnesota Timberwolves para o Denver Nuggets no jogo 5 da primeiras rodadas.</p>
+        </div>
+        <div class="tabela" id="tabela7">
+            <h2>Brasil cai para Argentina e perde Sul-Americano de Vôlei pela 1ª vez</h2>
+            <p>Seleção brasileira joga mal e é derrotada por 3 sets a 0 (25/19, 29/27 e 25/22) no Geraldão em Recife.</p>
+        </div>
+        <div class="tabela" id="tabela8">
+            <h2>Naiane é convocada para a seleção do Pré-Olímpico enquanto Macris segue em recuperação das costas</h2>
+            <p>Naiane vai se juntar ao time neste domingo, quando as jogadoras se apresentam ao técnico José Roberto Guimarães, em Saquarema.</p>
+        </div>
+    </div>
+
+    <style>
+        * {
+   margin: 0;
+   padding: 0;
+}
+html {
+   height: 100%;
+   width: 100%;
+}
+
+body {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   overflow-y: scroll;
+   overflow-x: hidden;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   background-color: #1B1B1B;
+}
+
+.noticias {
+   margin: 5px;
+   box-sizing: border-box;
+   display: grid;
+   gap: 5px;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(4, 1fr);
+   grid-template-areas:
+   "tabela1 tabela1 tabela2 tabela2"
+   "tabela1 tabela1 tabela3 tabela4"
+   "tabela5 tabela6 tabela7 tabela7"
+   "tabela8 tabela6 tabela7 tabela7";
+}
+
+h2 {
+   color: #e9e9e9;
+}
+
+.tabela:hover {
+   scale: 1.05;
+}
+
+#tabela1 {
+   grid-area: tabela1;
+   font-size: 3vw;
+   background-color: #cc66e6;
+}
+#tabela2 {
+   grid-area: tabela2;
+   font-size: 2vw;
+   background-color: #5df0d0;
+}
+#tabela3 {
+   grid-area: tabela3;
+   background-color: #3e7ff7;
+}
+#tabela4 {
+   grid-area: tabela4;
+   background-color: #600c97;
+}
+#tabela5 {
+   grid-area: tabela5;
+   background-color: #57003d;
+}
+#tabela6 {
+   grid-area: tabela6;
+   font-size: 1.7vw;
+   background-color: #fa0000;
+}
+#tabela7 {
+   grid-area: tabela7;
+   font-size: 2.5vw;
+   background-color: #f3ef09;
+}
+#tabela8 {
+   grid-area: tabela8;
+   background-color: #38d810;
+}
+
+@media screen and (max-width: 720px) {
+   .noticias {
+       grid-template-columns: 1fr;
+       grid-template-rows: repeat(8, 1fr);
+       grid-template-areas: none;
+       gap: 0;
+       row-gap: 5px;
+   }
+   #tabela1,
+   #tabela2,
+   #tabela3,
+   #tabela4,
+   #tabela5,
+   #tabela6,
+   #tabela7,
+   #tabela8 {
+   grid-area: auto;
+   font-size: 2vh;
+   }
+}
+    </style>
+</body>
+</html>
