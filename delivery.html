@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Pedidos Online/Entrega</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Pedidos Online/Entrega</h1>
+
+       
+        <h2>Opções de Pedidos Online</h2>
+        <p>Faça pedidos online para retirada ou entrega. Escolha a opção que melhor atende às suas necessidades:</p>
+        <ul>
+            <li><strong>Retirada no Restaurante:</strong> Faça seu pedido online e retire no nosso restaurante em Avenida Amelia Rosa.</li>
+            <li><strong>Entrega em Domicílio:</strong> Oferecemos entrega em algumas partes altas e baixas de Maceió.</li>
+        </ul>
+
+       
+        <h2>Áreas de Entrega</h2>
+        <p>Atualmente, oferecemos entrega nas seguintes áreas:</p>
+        <ul>
+            <li>parte baixa - Horário de entrega estimado: 40 minutos</li>
+            <li>parte alta - Horário de entrega estimado: 50 minutos</li>
+            
+        </ul>
+    </div>
+    <div class="container">
+        <h1>Faça Seu Pedido</h1>
+        <form>
+           
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" class="form-control" id="nome" placeholder="Seu Nome">
+            </div>
+            <div class="form-group">
+                <label for="endereco">Endereço de Entrega:</label>
+                <input type="text" class="form-control" id="endereco" placeholder="Seu Endereço">
+            </div>
+            <div class="form-group">
+                <label for="area-entrega">Área de Entrega:</label>
+                <select class="form-control" id="area-entrega">
+                    <option>Selecione a Área de Entrega</option>
+                    <option>jatiuca</option>
+                    <option>ponta verde</option>
+                    <option>pajuçara</option>
+                    <option>farol</option>
+                    <option>serraria</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="pedido">Faça seu Pedido:</label>
+                <textarea class="form-control" id="pedido" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="forma-pagamento">Formas de pagamento</label>
+                <select class="form-control" id="formapagamento">
+                    <option>Selecione a Forma de pagamento</option>
+                    <option>pix</option>
+                    <option>dinheiro</option>
+                    <option>débito</option>
+                    <option>crédito</option>
+                </select>
+            </div>
+            
+
+            
+            <button type="submit" class="btn btn-primary">Enviar Pedido</button>
+        </form>
+    </div>
+
+</body>
+</html>
