@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem de Vogais</title>
+</head>
+<body>
+    <h2>Contagem de Vogais</h2>
+    <input type="text" id="inputString" placeholder="Digite uma frase...">
+    <button onclick="countVowels()">Contar Vogais</button>
+    <p id="result"></p>
+    <script>
+        function countVowels() {
+    const inputString = document.getElementById("inputString").value;
+    const vowelPattern = /[aeiouAEIOU]/g;
+    const vowelCount = (inputString.match(vowelPattern) || []).length;
+    const resultElement = document.getElementById("result");
+    resultElement.textContent = `Número de vogais na frase: ${vowelCount}`;
+}
+    </script>
+</body>
+</html>
