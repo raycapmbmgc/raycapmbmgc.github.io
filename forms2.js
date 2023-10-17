@@ -4,8 +4,7 @@
 
         form.addEventListener("submit", function (event) {
             event.preventDefault();
-            errorMessages.innerHTML = ""; // Clear previous error messages
-
+            errorMessages.innerHTML = "";
             const nomeAluno = document.getElementById("nome-aluno").value;
             const dataNascimento = document.getElementById("data-nascimento").value;
             const email = document.getElementById("email").value;
