@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    background-color: #6e176a;
+    height: 100vh;
+    color: beige;
+}
+
+header {
+    background-color: #08000e;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribui os itens com espaço entre eles */
+    padding: 10px;
+    position: relative; /* Necessário para posicionar a imagem corretamente */
+}
+
+header h3 {
+    color: #fff;
+    margin-left: 10px; /* Espaço entre a imagem e o texto */
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Alinha verticalmente a imagem e o texto */
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.menu {
+    flex: 1;
+    text-align: center;
+}
+
+.menu nav {
+    display: flex;
+    justify-content: center;
+}
+
+.menu nav a {
+    color: #fff;
+    text-decoration: none;
+    right: 90px; /* Ajuste o valor conforme necessário */
+    top: 30%;
+    padding: 20px;
+    font-size: 18px;
+    position: relative;
+}
+
+.menu nav a::after {
+    content: " ";
+    width: 0;
+    height: 4px;
+    background-image: linear-gradient(45deg, #6e176a, rgb(247, 0, 255));
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
+
+.menu nav a:hover::after {
+    width: 30px;
+}
+
+.sociais {
+    position: absolute;
+    right: 10px;
+}
+
+.sociais button {
+    width: 40px;
+    height: 40px;
+    background-image: linear-gradient(45deg, #6e176a, rgb(247, 0, 255));
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.sociais button i {
+    font-size: 20px;
+}
+
+.img-miranha {
+    margin-top: -20px;
+    position: absolute;
+    right: 180px; /* Ajuste o valor conforme necessário */
+    top: 30%;
+    transform: translateY(-50%);
+    animation: flutuar 5s ease-in-out infinite;
+}
+
+.img-miranha img {
+    width: 350px; /* Ajuste o tamanho conforme necessário */
+    height: 350px; /* Ajuste o tamanho conforme necessário */
+}
+
+.txt-animado {
+    font-size: 45px;
+    font-weight: 300;
+    margin-top: 150px;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: #fff;
+}
+.text{
+    color: #ffffff;
+}
+h2 {
+    padding-left: 100px;
+    padding-right: 100px;
+    color: #ffffff; /* Garante que o h2 seja branco */
+}
+
+h3 {
+    padding-left: 100px;
+    padding-right: 100px;
+    color: #ffffff; /* Garante que o h3 seja branco */
+}
+
+.txt-animado span {
+    position: relative;
+}
+
+.txt-animado span::before {
+    content: "";
+    color: #08000e;
+    animation: palavras 30s infinite;
+}
+
+.txt-animado span::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid pink;
+    right: -10px;
+    opacity: 1;
+    animation: cursor 0.8s infinite, digita 30s steps(30) infinite;
+    width: calc(100% + 15px);
+    background-color: #6e176a;
+    margin-top: 5px;
+}
+
+@keyframes digita {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: calc(100% + 15px);
+    }
+}
+
+@keyframes cursor {
+    0% {
+        border-left: 2px solid #6e176a;
+    }
+}
+
+@keyframes palavras {
+    0%, 25% {
+        content: "Welcome to my portfolio :)";
+    }
+    26%, 50% {
+        content: "Welcome to my portfolio :)";
+    }
+    51%, 75% {
+        content: "Welcome to my portfolio :)";
+    }
+    76%, 100% {
+        content: "Welcome to my portfolio :)";
+    }
+}
+
+@keyframes flutuar {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Footer Styles */
+.footer {
+    margin-top: 122px;
+    background-color: #08000e;
+    color: #fff;
+    padding: 10px 0; /* Reduzido o padding para um footer mais compacto */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px; /* Ajuste o tamanho da fonte para um footer menor */
+}
+
+.footer h5 {
+    font-size: 16px; /* Tamanho da fonte dos títulos menor */
+    margin-bottom: 10px;
+}
+
+.footer p, .footer a {
+    font-size: 12px; /* Ajuste o tamanho da fonte dos textos e links */
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer .list-unstyled li {
+    margin-bottom: 5px; /* Reduzido o espaço entre os itens da lista */
+}
+
+.footer .text-center {
+    margin-top: 10px; /* Ajuste a margem superior para o texto de copyright */
+}
+
+/* Ajuste para garantir a responsividade */
+@media (max-width: 767px) {
+    .footer .row {
+        text-align: center;
+    }
+}
